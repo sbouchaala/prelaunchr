@@ -1,0 +1,227 @@
+/*--------------Table of Contents
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+*/
+/*--------------Base 960 Grid*/
+
+    .responsive                                 { position: relative; margin: 0 auto; padding: 0;}
+    .responsive .row {width: 980px; margin:0 auto;}
+	
+	.responsive .offleft					   	   { margin-left: 0px!important;}
+	.responsive .offright					       { margin-right: 0px!important;}
+	.responsive .offtop						   { margin-top: 0px!important;}
+	.responsive .offbottom					   { margin-bottom: 0px!important;}
+	
+
+	.responsive .col01,.responsive .col02,.responsive .col03,.responsive .col04,.responsive .col05,.responsive .col06,.responsive .col07,.responsive .col08,
+	.responsive .col09,.responsive .col10,.responsive .col11,.responsive .col12,.responsive .col13 ,.responsive .col14,.responsive .col15 ,.responsive .col16,
+	.responsive .col-1-3,.responsive .col-2-3 { float: left; display: inline; margin:10px;}
+	
+    /* Base Grid */
+	.responsive .col01                    { width: 40px;  }
+    .responsive .col02                    { width: 100px; }
+    .responsive .col03                    { width: 160px; }
+    .responsive .col04                    { width: 220px; }
+    .responsive .col05                    { width: 280px; }
+    .responsive .col06                    { width: 340px; }
+    .responsive .col07                    { width: 400px; }
+    .responsive .col08                    { width: 460px; }
+    .responsive .col09                    { width: 520px; }
+    .responsive .col10                    { width: 580px; }
+    .responsive .col11                    { width: 640px; }
+    .responsive .col12                    { width: 700px; }
+    .responsive .col13                    { width: 760px; }
+    .responsive .col14                    { width: 820px; }
+    .responsive .col15                    { width: 880px; }
+    .responsive .col16                    { width: 940px; }
+
+    .responsive .col-1-3                  { width: 300px; }
+    .responsive .col-2-3                  { width: 620px; }
+
+    /* Offsets */
+    .responsive .offset01                   { margin-left: 60px;  }
+    .responsive .offset02                   { margin-left: 120px; }
+    .responsive .offset03                   { margin-left: 180px; }
+    .responsive .offset04                   { margin-left: 240px; }
+    .responsive .offset05                   { margin-left: 300px; }
+    .responsive .offset06                   { margin-left: 360px; }
+    .responsive .offset07                   { margin-left: 420px; }
+    .responsive .offset08                   { margin-left: 480px; }
+    .responsive .offset09                   { margin-left: 540px; }
+    .responsive .offset10                   { margin-left: 600px; }
+    .responsive .offset11                   { margin-left: 660px; }
+    .responsive .offset12                   { margin-left: 720px; }
+    .responsive .offset13                   { margin-left: 780px; }
+    .responsive .offset14                   { margin-left: 840px; }
+    .responsive .offset15                   { margin-left: 900px; }
+
+
+
+/*--------------Tablet (Portrait)*/
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .responsive .row                          { width: 768px; }
+
+		.responsive .col01,.responsive .col02,.responsive .col03,.responsive .col04,.responsive .col05,.responsive .col06,.responsive .col07,.responsive .col08,
+		.responsive .col09,.responsive .col10,.responsive .col11,.responsive .col12,.responsive .col13 ,.responsive .col14,.responsive .col15 ,.responsive .col16,
+		.responsive .col-1-3,.responsive .col-2-3 { margin: 10px;  }
+		
+        .responsive .col01                   { width: 28px; }
+        .responsive .col02                   { width: 76px; }
+        .responsive .col03                   { width: 124px; }
+        .responsive .col04                   { width: 172px; }
+        .responsive .col05                   { width: 220px; }
+        .responsive .col06                   { width: 268px; }
+        .responsive .col07                   { width: 316px; }
+        .responsive .col08                   { width: 364px; }
+        .responsive .col09                   { width: 412px; }
+        .responsive .col10                   { width: 460px; }
+        .responsive .col11                   { width: 508px; }
+        .responsive .col12                   { width: 556px; }
+        .responsive .col13                   { width: 604px; }
+        .responsive .col14                   { width: 652px; }
+        .responsive .col15                   { width: 700px; }
+        .responsive .col16                   { width: 748px; }
+
+        .responsive .col-1-3                { width: 236px; }
+        .responsive .col-2-3                { width: 492px; }
+
+        /* Offsets */ 
+        .responsive .offset01                 { margin-left: 48px; }
+        .responsive .offset02                 { margin-left: 96px; }
+        .responsive .offset03                 { margin-left: 144px; }
+        .responsive .offset04                 { margin-left: 192px; }
+        .responsive .offset05                 { margin-left: 240px; }
+        .responsive .offset06                 { margin-left: 288px; }
+        .responsive .offset07                 { margin-left: 336px; }
+        .responsive .offset08                 { margin-left: 384px; }
+        .responsive .offset09                 { margin-left: 432px; }
+        .responsive .offset10                 { margin-left: 480px; }
+        .responsive .offset11                 { margin-left: 528px; }
+        .responsive .offset12                 { margin-left: 576px; }
+        .responsive .offset13                 { margin-left: 624px; }
+        .responsive .offset14                 { margin-left: 672px; }
+        .responsive .offset15                 { margin-left: 720px; }
+    }
+
+
+/*--------------Mobile (Portrait)*/
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .responsive .row { width: 300px; }
+
+		.responsive .col01,.responsive .col02,.responsive .col03,.responsive .col04,.responsive .col05,.responsive .col06,.responsive .col07,.responsive .col08,
+		.responsive .col09,.responsive .col10,.responsive .col11,.responsive .col12,.responsive .col13 ,.responsive .col14,.responsive .col15 ,.responsive .col16,
+		.responsive .col-1-3,.responsive .col-2-3 {margin: 10px 0; }
+		
+        .responsive .col01,
+        .responsive .col02,
+        .responsive .col03,
+        .responsive .col04,
+        .responsive .col05,
+        .responsive .col06,
+        .responsive .col07,
+        .responsive .col08,
+        .responsive .col09,
+        .responsive .col10,
+        .responsive .col11,
+        .responsive .col12,
+        .responsive .col13,
+        .responsive .col14,
+        .responsive .col15,
+        .responsive .col16,
+        .responsive .col-1-3,
+        .responsive .col-2-3  { width: 300px; }
+
+        /* Offsets */
+        .responsive .offset01,
+        .responsive .offset02,
+        .responsive .offset03,
+        .responsive .offset04,
+        .responsive .offset05,
+        .responsive .offset06,
+        .responsive .offset07,
+        .responsive .offset08,
+        .responsive .offset09,
+        .responsive .offset10,
+        .responsive .offset11,
+        .responsive .offset12,
+        .responsive .offset13,
+        .responsive .offset14,
+        .responsive .offset15 { margin-left: 0; }
+
+    }
+
+
+/*--------------Mobile (Landscape)*/
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .responsive .row { width: 440px; }
+		
+        .responsive .col01,.responsive .col02,.responsive .col03,.responsive .col04,.responsive .col05,.responsive .col06,.responsive .col07,.responsive .col08,
+		.responsive .col09,.responsive .col10,.responsive .col11,.responsive .col12,.responsive .col13 ,.responsive .col14,.responsive .col15 ,.responsive .col16,
+		.responsive .col-1-3,.responsive .col-2-3 {margin: 10px 0; }
+
+        .responsive .col01,
+        .responsive .col02,
+        .responsive .col03,
+        .responsive .col04,
+        .responsive .col05,
+        .responsive .col06,
+        .responsive .col07,
+        .responsive .col08,
+        .responsive .col09,
+        .responsive .col10,
+        .responsive .col11,
+        .responsive .col12,
+        .responsive .col13,
+        .responsive .col14,
+        .responsive .col15,
+        .responsive .col16,
+        .responsive .col-1-3,
+        .responsive .col-2-3 { width: 420px; }
+    }
+	
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+.responsive:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

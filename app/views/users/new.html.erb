@@ -1,20 +1,30 @@
 <div class="hero">
-    <p class="large brandon">Harry&#8217;s is live</p>
-    <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+  <div class="row">
+    <div class="col08">
+      <p class="large brandon">Harry&#8217;s is live</p>
+      <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+    </div>
+    <div class="col08 main-img">
+    </div>
+  </div>
 </div>
 
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+<div class="row form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
     <% if Rails.application.config.ended %>
         <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
         <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
         <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
         <p class="again brandon">Thank You Again!</p>
     <% else %>
-        <div class="key"></div>
-        <p class="byline brandon">Be the first to know</p>
+      <div class="row byline brandon">
+        <div class="col06 offset05"><div class="key"></div></div>
+      </div>
+      <div class="row byline brandon">
+        <div class="col06 offset05"><p>Be the first to know</p></div>
+      </div>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-            <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
+            <%= f.text_field :email, :placeholder => "Enter Email", :class => "col05 offset04 email brandon" %>
+            <input class="col03 submit brandon" name="commit" type="submit" value="Step Inside" />
         <% end %>
     <% end %>
 </div>
