@@ -38,6 +38,10 @@ class User < ActiveRecord::Base
         }
     ]
 
+    def display_name
+      self.email
+    end
+
     private
     def update_referral_count
       if self.referrer
