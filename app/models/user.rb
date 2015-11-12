@@ -8,7 +8,8 @@ class User < ActiveRecord::Base
     validates :referral_code, :uniqueness => true
 
     before_create :create_referral_code
-    after_create :send_welcome_email
+    after_create :update_referral_count
+    #after_create :send_welcome_email
 
     REFERRAL_STEPS = [
         {
@@ -38,6 +39,16 @@ class User < ActiveRecord::Base
     ]
 
     private
+    def update_referral_count
+      if self.referrer
+        if self.referrer.referred
+          self.referrer.referred +=1
+        else
+          self.referrer.referred = 1
+        end
+        self.referrer.save
+      end
+    end
 
     def create_referral_code
         referral_code = SecureRandom.hex(5)
